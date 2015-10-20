@@ -11,3 +11,7 @@ end
 Given /^I set the date to "(.*?)" on DatePicker with id "([^\"]*)"$/ do |date, id|
   set_date("DatePicker id:'#{id}'", date)
 end
+
+Given /^I press TextView with text "([^\"]*)"$/ do |text|
+  touch("RobotoTextView text:'#{text}'")
+end
