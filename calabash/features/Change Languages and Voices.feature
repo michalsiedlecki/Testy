@@ -16,9 +16,7 @@ And I press "Languages and Voices"
 And I press "Android SpeechSynthesis"
 And I press "Italian"
 And I press "Test Voice"
-And I wait for 5 seconds
 And I press "Select Voice"
 And I press view with contentDescription "Navigate up"
 And I press view with id "ButtonCountdownStopText"
 
-And I wait for 12 seconds

@@ -11,7 +11,6 @@ And I enter text "endomondo22" into field with id "password"
 And I press "Login"
 
 And I press view with contentDescription "Navigation drawer"
-And I wait for 2 seconds
 And I press TextView with text "Challenges"
 And I press "Create"
 And I press "START CHALLENGE"

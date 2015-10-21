@@ -15,5 +15,4 @@ And I press "Settings"
 And I press "Profile"
 And I press "Date of Birth"
 And I set the date to "01-01-2001" on DatePicker with id "DatePicker"
-And I wait for 5 seconds
 And I press "Ok"
