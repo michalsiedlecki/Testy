@@ -9,9 +9,9 @@ And I press "Running"
 And I press "Hiking"
 And I press "Distance"
 And I press "Heart Rate"
-And I press "Pace"
+And I press "Speed"
 And I press "Calories"
 And I press view with id "ButtonStartPauseFront"
-And I wait 2 seconds
+
 
 
