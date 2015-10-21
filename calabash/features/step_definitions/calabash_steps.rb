@@ -13,5 +13,5 @@ Given /^I set the date to "(.*?)" on DatePicker with id "([^\"]*)"$/ do |date, i
 end
 
 Given /^I press TextView with text "([^\"]*)"$/ do |text|
-  touch("RobotoTextView text:'#{text}'")
+  tap_when_element_exists("RobotoTextView text:'#{text}'")
 end
