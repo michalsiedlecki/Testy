@@ -19,7 +19,7 @@ And I press TextView with text "Duration"
 And I set the hour to "5", minutes to "4", secunds to "3" on NumberPicker
 And I press "Done"
 And I press TextView with text "Distance"
-And I set distance from "2" to "3" on NumberPicker
+And I set distance "3" km and "4" m on NumberPicker
 And I press "Done"
 And I press "Save"
 
