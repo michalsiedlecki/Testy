@@ -3,3 +3,19 @@ query('*')
 query('*')
 query("* text:'Running'")
 exit
+start_test_server_in_background
+query(*)
+query('*')
+start_test_server_in_background
+query('*')
+query("'* text: 'Distance'")
+query('*')
+start_test_server_in_background
+start_test_server_in_background
+start_test_server_in_background
+start_test_server_in_background
+query('*')
+start_test_server_in_background
+query('*')
+start_test_server_in_background
+start_test_server_in_background

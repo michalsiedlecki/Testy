@@ -1,5 +1,8 @@
-Feature: Login
+Feature: Profil
 
- Scenario: Verify that user can login when all data is correct.
+ Scenario: I will change date of birthday.
  Given I want to be logged in
- And I want change my birthday
+ And I click Options
+ And I click Settings
+ And I click Profile
+ And I change date of birthday
