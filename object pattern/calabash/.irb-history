@@ -1,0 +1,5 @@
+start_test_server_in_background
+query('*')
+query('*')
+query("* text:'Running'")
+exit
