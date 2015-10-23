@@ -22,6 +22,6 @@ end
 
 module Kernel
   def login_page
-    Endomondo::LoginPage
+    Endomondo::Login
   end
 end

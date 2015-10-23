@@ -4,9 +4,9 @@ describe 'Verify if the user can login to the application with valid credencials
   t 'spec' do
     
     login_page.loginClick
-    login_with_page.loginWithEmailClick
-    login_with_email_page.fill_form(USERS[:valid][:email], USERS[:valid][:password])
-    login_with_email_page.login_click
+    login_options_page.loginWithEmailClick
+    login_by_email_page.fillForm(USERS[:valid][:email], USERS[:valid][:password])
+    login_by_email_page.login_click
     #workout_page.assert
     
   end
