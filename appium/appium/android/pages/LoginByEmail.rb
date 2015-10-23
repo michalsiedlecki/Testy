@@ -18,11 +18,13 @@ module Endomondo
         assert
         wait { @emailField.type(email) }
         wait { @passwordField.type(password)}
+        
       end
       
        def loginClick
         assert
         wait { @loginButton.click }
+        main_activity_page.assert
        end
       
     end
