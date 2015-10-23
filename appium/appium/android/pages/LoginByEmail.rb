@@ -11,7 +11,7 @@ module Endomondo
       end
 
       def assert
-        wait { assert_exists }
+        wait { assertExists }
       end
       
       def fillForm(email, password)
