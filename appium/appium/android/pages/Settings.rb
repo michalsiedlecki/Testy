@@ -21,6 +21,8 @@ module Endomondo
           }
         profile_page.assert
        end
+       
+       
       
     end
   end

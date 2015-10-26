@@ -3,7 +3,7 @@ module Endomondo
     class << self
       
       def assertExists
-       # @audioSettings = find_element(:text, 'Audio Settings')
+       @audioSettings = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Audio Settings']") 
        @settings = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Settings']") 
        # @tutorial = find_element(:text, 'Tutorial')
        # @exit = find_element(:text, 'Exit')
@@ -21,6 +21,12 @@ module Endomondo
           #text_exact("Settings").click
           }
         settings_page.assert
+       end
+       
+       def audioSettingsClick
+        assert
+        wait {@audioSettings.click}
+        audio_settings_page.assert
        end
       
     end
