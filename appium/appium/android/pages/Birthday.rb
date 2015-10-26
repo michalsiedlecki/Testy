@@ -5,9 +5,9 @@ module Endomondo
     class << self
       
       def assertExists
-        @day = find_element(:xpath,"//*[@class='android.widget.EditText'and @text='20']")
-        @month = find_element(:xpath,"//*[@class='android.widget.EditText'and @text='Nov']")
-        @year = find_element(:xpath,"//*[@class='android.widget.EditText'and @text='1988']")
+        @day = find_element(:xpath,"//*[@class='android.widget.NumberPicker'and @text='21']")
+        @month = find_element(:xpath,"//*[@class='android.widget.NumberPicker'and @text='Dec]")
+        @year = find_element(:xpath,"//*[@class='android.widget.NumberPicker'and @text='1989']")
         @okButton = find_element(:xpath,"//*[@class='android.widget.Button'and @text='Ok']")
       end
 
@@ -15,18 +15,21 @@ module Endomondo
         wait { assertExists }
       end
       
-       def changeDate
+      def changeDate
         assert
         wait {
-               @day.send_keys("25")
-               @month.send_keys("Dec")
-               @year.send_keys("2000")
-               @okButton.click
-               sleep(10)
+          
+          swipe({'duration': 100, 'start_x': @year.location.x, 'start_y': @year.location.y, 'end_x': 10, 'end_y': @year.location.y})
+          
+               #@day.click
+               #@month.click
+               #@year.click
+               #@okButton.click
+               #sleep(10)
                #find_element(:xpath,"//*[@class='android.widget.NumberPicker'and @index='2']").sendKeys("2010");
             }
         
-       end
+      end
       
     end
   end
