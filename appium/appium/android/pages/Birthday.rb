@@ -28,15 +28,13 @@ module Endomondo
         assert
         wait {
           
-          swipe_element(@year,100,50)
-          
-               #@day.click
-               #@month.click
-               #@year.click
-               #@okButton.click
-               #sleep(10)
-               #find_element(:xpath,"//*[@class='android.widget.NumberPicker'and @index='2']").sendKeys("2010");
+          swipe_element(@day,1000,500)
+          swipe_element(@month,1000,500)
+          swipe_element(@year,1000,500)
+          @okButton.click
+                      
             }
+        profile_page.assert
         
       end
       

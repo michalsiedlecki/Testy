@@ -21,9 +21,14 @@ module Endomondo
         wait { scroll_to("Miles").click
               find_element(:id, 'Button').click
           }
+        end
         
+        def SaveClick
+          assert
+          wait { find_element(:id, 'Button').click }
+        end
         
-       end
+       
       
     end
   end

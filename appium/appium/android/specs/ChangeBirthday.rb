@@ -12,6 +12,6 @@ describe 'Verify if the user can change birthday' do
     settings_page.profileClick
     profile_page.birthdayClick
     birthday_page.changeDate
-    
+    profile_page.SaveClick
   end
 end
