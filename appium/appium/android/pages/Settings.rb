@@ -4,7 +4,7 @@ module Endomondo
       
       def assertExists
         @profile = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Profile']") 
-       
+        @workoutSettings = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Workout Settings']")
       
         
       end
@@ -22,7 +22,11 @@ module Endomondo
         profile_page.assert
        end
        
-       
+       def workoutSettingsClick
+        assert
+        wait { @workoutSettings.click }
+        workout_Page.assert
+       end
       
     end
   end

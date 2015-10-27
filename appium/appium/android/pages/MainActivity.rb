@@ -6,10 +6,10 @@ module Endomondo
        
       
       def assertExists
-        @durationButton = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Duration']")
+        
         @motivationMainButton = find_element(:id, 'MotivationMainButton')
         @sportMainButton = find_element(:id, 'SportMainButton')
-        @workoutButton = find_element(:id, 'ButtonStartPauseBackground')
+        @workoutButton = find_element(:id, 'ButtonStartPauseFront')
         @moreOptionsButton = find_element(:xpath,"//*[@class='android.widget.ImageView'and @content-desc='More options']")
         
       end
@@ -32,7 +32,7 @@ module Endomondo
       
       def durationClick
         assert
-        wait { @durationButton.click }
+        wait { find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Duration']").click }
         select_data_page.assert
       end
       

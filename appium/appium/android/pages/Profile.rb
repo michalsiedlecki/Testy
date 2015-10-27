@@ -3,7 +3,7 @@ module Endomondo
     class << self
       
       def assertExists
-        @birthdayButton = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Date of Birth']")  
+        @birthdayButton = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Date of Birth']")
       end
 
       def assert
@@ -13,6 +13,15 @@ module Endomondo
        def birthdayClick
         assert
         wait { @birthdayButton.click }
+        
+       end
+       
+       def unitsClick
+        assert
+        wait { scroll_to("Miles").click
+              find_element(:id, 'Button').click
+          }
+        
         
        end
       
