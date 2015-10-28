@@ -15,10 +15,7 @@ module Endomondo
       
        def profileClick
         assert
-        wait {
-          @profile.click
-          #text_exact("Profile").click
-          }
+        wait { @profile.click }
         profile_page.assert
        end
        

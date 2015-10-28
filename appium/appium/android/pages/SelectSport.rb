@@ -19,6 +19,12 @@ module Endomondo
         wait { @hikingButton.click }
         main_activity_page.assert
        end
+      def hikingButonChallengeClick
+        assert
+        wait { @hikingButton.click
+          find_element(:xpath,"//*[@class='android.widget.Button'and @text='Done']").click}
+        create_challenge_page.assert
+      end
       
     end
   end

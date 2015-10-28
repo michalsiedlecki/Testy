@@ -9,7 +9,7 @@ module Endomondo
         @day = @pickers[1] 
         @month = @pickers[0]
         @year = @pickers[2]
-        @okButton = find_element(:xpath,"//*[@class='android.widget.Button'and @text='Ok']")
+        
       end
 
       def assert
@@ -31,10 +31,24 @@ module Endomondo
           swipe_element(@day,1000,500)
           swipe_element(@month,1000,500)
           swipe_element(@year,1000,500)
-          @okButton.click
+          find_element(:xpath,"//*[@class='android.widget.Button'and @text='Ok']").click
                       
             }
         profile_page.assert
+        
+      end
+      
+      def changeChallengeDate
+        assert
+        wait {
+          
+          swipe_element(@day,1000,500)
+          swipe_element(@month,1000,500)
+          swipe_element(@year,1000,500)
+          find_element(:xpath,"//*[@class='android.widget.Button'and @text='Done']").click
+                      
+            }
+        create_challenge_page.assert
         
       end
       

@@ -7,6 +7,7 @@ module Endomondo
       
       def assertExists
         
+        @navigationButton = find_element(:xpath,"//*[@class='android.widget.ImageButton'and @content-desc='Navigation drawer']")
         @motivationMainButton = find_element(:id, 'MotivationMainButton')
         @sportMainButton = find_element(:id, 'SportMainButton')
         @workoutButton = find_element(:id, 'ButtonStartPauseFront')
@@ -40,6 +41,13 @@ module Endomondo
         assert
         wait { @workoutButton.click }
       end
+      
+      def navigationButtonClick
+        assert
+        wait { @navigationButton.click }
+        menu_page.assert
+      end
+      
     end
   end
 end
