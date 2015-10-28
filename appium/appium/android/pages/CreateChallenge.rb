@@ -3,13 +3,12 @@ module Endomondo
     class << self
       
       def assertExists
-        @addName = find_element(:id, 'challenge_name_input')
-        @goal = find_element(:id, 'info_picker_description')
-       # @startDate = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Oct 28, 2015']")
-       # @endDate = find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Nov 28, 2015']")
-        #@makeButton = find_element(:id, 'newChallengeButton')
-        
-        
+        @addName = find_element(:id, 'challenge_name_input')        
+        @pickers = find_elements(:id, "info_picker_description")
+        @goal = @pickers[0] 
+        @addSport = @pickers[1]
+        @startDate = @pickers[2]
+        @endDate = @pickers[3]
       end
 
       def assert
@@ -29,15 +28,21 @@ module Endomondo
        
        def sportClick
         assert
-        wait { find_element(:xpath,"//*[@class='android.widget.TextView'and @text='All Sports']").click }
+        wait { @addSport.click }
         selectS.assert
        end
       
       def startClick
         assert
-        wait { find_element(:xpath,"//*[@class='android.widget.TextView'and @text='Oct 28, 2015']").click }
+        wait { @startDate.click }
         birthday_page.assert
       end
+      
+       def doneClick
+        assert
+        wait { find_element(:id, 'newChallengeButton').click }
+        birthday_page.assert
+       end
       
     end
   end

@@ -17,5 +17,6 @@ describe 'Verify if the user can make new challenge' do
     selectS.hikingButonChallengeClick
     create_challenge_page.startClick
     birthday_page.changeChallengeDate
+    create_challenge_page.doneClick
   end
 end
