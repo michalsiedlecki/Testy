@@ -1,6 +1,6 @@
 require_relative '../requires' # enable auto complete in RubyMine
 
-describe 'Verify if the user can make new challenge' do
+describe "Verify if the user can't make new challenge if he enter wrong start date" do
   t 'spec' do
     
     login_page.loginClick
