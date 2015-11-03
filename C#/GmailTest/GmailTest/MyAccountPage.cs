@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -17,14 +18,18 @@ namespace GmailTest
 
 
 
-        [FindsBy(How = How.ClassName, Using = "OZ")]
+        // [FindsBy(How = How.XPath, Using = "//div[contains(.,'Informacje osobowe')]")]
+        [FindsBy(How = How.Id, Using = "i2")]
         public IWebElement btnSecurity { get; set; }
 
 
 
         public void SecurityClick()
         {
-            Console.WriteLine("Klikam w logowanie i bezpieczeństwo");
+            /*Actions actions = new Actions(PropertiesCollection.driver);
+            actions.MoveToElement(btnSecurity);
+            actions.Perform();*/
+            Console.WriteLine("Klikam w 'Informacje osobowe i prywatność'");
             SeleniumSetMethods.Click(btnSecurity);
 
         }

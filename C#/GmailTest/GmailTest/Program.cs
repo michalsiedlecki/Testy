@@ -21,6 +21,7 @@ namespace GmailTest
         {
             PropertiesCollection.driver = new ChromeDriver(@"C:\Users\user\Downloads");
             PropertiesCollection.driver.Navigate().GoToUrl("https://www.gmail.com/");
+            
             Console.WriteLine("open page");
         }
         [Test]
@@ -36,17 +37,25 @@ namespace GmailTest
             mainPage.OptionsClick();
             OptionsPage optionsPage = new OptionsPage();
             optionsPage.MyAccountClick();
+            //if you want to switch back to your first window
+            // driver.SwitchTo().Window(driver.WindowHandles.First());
+
+            //switch to new window.
+            PropertiesCollection.driver.SwitchTo().Window(PropertiesCollection.driver.WindowHandles.Last());
+
+            MyAccountPage myAccountPage = new MyAccountPage();
+            myAccountPage.SecurityClick();
             
         }
         
 
 
-        [TearDown]
+       /* [TearDown]
         public void CleanUp()
         {
             PropertiesCollection.driver.Close();
             Console.WriteLine("Close page ");
-        }
+        }*/
     }
 
 }

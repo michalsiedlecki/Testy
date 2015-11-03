@@ -18,7 +18,7 @@ namespace YouTubeTest
        
 
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='channels - feeds - posting']/form/div[2]/button/span")]
+        [FindsBy(How = How.XPath, Using = "//span[contains(.,'Opublikuj')]")]
         public IWebElement btnAdd { get; set; }
         
 
