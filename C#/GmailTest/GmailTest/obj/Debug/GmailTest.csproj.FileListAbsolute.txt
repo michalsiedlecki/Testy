@@ -1,0 +1,16 @@
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\GmailTest.exe.config
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\GmailTest.exe
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\GmailTest.pdb
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\nunit.core.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\nunit.core.interfaces.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\nunit.framework.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\nunit.util.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\WebDriver.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\WebDriver.Support.dll
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\nunit.framework.xml
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\WebDriver.xml
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\bin\Debug\WebDriver.Support.xml
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\obj\Debug\GmailTest.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\obj\Debug\GmailTest.exe
+c:\users\user\documents\visual studio 2015\Projects\GmailTest\GmailTest\obj\Debug\GmailTest.pdb

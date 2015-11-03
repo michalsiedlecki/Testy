@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F6EEF29-4540-462F-B56F-4964CB9C977C}</ProjectGuid>
+    <ProjectGuid>{C9C02F74-491D-4870-BD75-A2940A90079D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>YouTubeTest</RootNamespace>
-    <AssemblyName>YouTubeTest</AssemblyName>
+    <RootNamespace>GmailTest</RootNamespace>
+    <AssemblyName>GmailTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -72,19 +72,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="History.cs" />
-    <Compile Include="HistoryClear.cs" />
     <Compile Include="MainPage.cs" />
-    <Compile Include="MainPageAfterLogout.cs" />
-    <Compile Include="MenuPage.cs" />
-    <Compile Include="MyChannel.cs" />
-    <Compile Include="MyChannel2.cs" />
-    <Compile Include="NavigationPage.cs" />
+    <Compile Include="MyAccountPage.cs" />
+    <Compile Include="OptionsPage.cs" />
     <Compile Include="PasswordPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PropertiesCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchPage.cs" />
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="SeleniumSetMethods.cs" />
     <Compile Include="SignInPage.cs" />
@@ -92,18 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\packages\WebDriverChromeDriver.2.10\tools\chromedriver.exe">
-      <Link>chromedriver.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="chromedriver-license.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
