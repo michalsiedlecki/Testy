@@ -1,0 +1,9 @@
+#config/cucumber.yml
+## YAML Template
+
+android: PLATFORM=android -r features/support -r features/step_definitions -r features/android/calabash/features/support  -r features/android/calabash/features/pages 
+
+ios: PLATFORM=ios DEVICE_TARGET="iPhone 6s (9.1)" -r features/support -r features/step_definitions -r features/ios/support -r features/ios/helpers  -r features/ios/pages 
+
+
+
