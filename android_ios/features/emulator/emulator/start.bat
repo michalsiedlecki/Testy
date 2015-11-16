@@ -1,0 +1,1 @@
+ruby -I..\ emulator.rb

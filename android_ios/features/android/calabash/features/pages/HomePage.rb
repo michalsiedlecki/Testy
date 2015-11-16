@@ -5,17 +5,27 @@ class HomePage < DroidLeeo
    element(:fahrenheit) { "RadioButton id:'fahrenheit_radio_button'"}
    element(:back) { "RelativeLayout id:'cancel_down_arrow_container'"}
   
-  action(:touchCelsius) {touch(celsius)}
-  action(:touchFahrenheit) {touch(fahrenheit)}
-  action(:touchHomeInformation) {touch(homeInformation)}
-  action(:touchBack) {touch(back)}
+  def touchCelsius
+     touch(celsius)
+  end
+  
+  def touchFahrenheit
+     touch(fahrenheit)
+  end
+  
+  def touchHomeInformation
+    touch(homeInformation)
+  end
+  
+  def touchBack
+     touch(back)
+  end
   
   trait(:trait) { celsius }
   
   def ChangeUnit
     touchCelsius #if element_exists("#{:celsius} isSelected:1") 
-    touch(back)
-    
+    touch(back) 
   end
   
     

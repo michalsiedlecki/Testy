@@ -4,9 +4,19 @@ class AccountPage < DroidLeeo
   element(:number) { "TextField marked:'TextField.phone-number'"}
   element(:save) { "button marked:'Button.save'"}
   
-  action(:touchNumber) {touch(number)}
-  action(:touchSave)  {touch(save)}
-  action(:touchLogOut) {touch(logOut)}
+  def touchNumber
+    touch(number)
+  end
+  
+  def touchSave
+    touch(save)
+  end
+  
+  def touchLogOut
+    touch(logOut)
+  end
+  
+  trait(:trait) { number }
   
   def ChangeNumber(number1, number2)
     touchNumber
@@ -17,6 +27,4 @@ class AccountPage < DroidLeeo
     end
     touchSave
   end
-  
-  trait(:trait) { number }
 end

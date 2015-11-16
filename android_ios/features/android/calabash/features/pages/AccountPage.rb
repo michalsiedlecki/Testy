@@ -4,9 +4,17 @@ class AccountPage < DroidLeeo
   element(:number) { "EditText id:'phone_number_info'"}
   element(:save) { "Button id:'save_button'"}
   
-  action(:touchNumber) {touch(number)}
-  action(:touchSave)  {touch(save)}
-  action(:touchLogOut) {touch(logOut)}
+  def touchNumber
+    touch(number)
+  end
+  
+  def touchSave
+    touch(save)
+  end
+  
+  def touchLogOut
+    touch(logOut)
+  end
   
   def ChangeNumber(number1, number2)
     touchNumber

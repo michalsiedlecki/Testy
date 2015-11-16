@@ -1,0 +1,1 @@
+#!/usr/bin/bashruby -I../ emulator.rb

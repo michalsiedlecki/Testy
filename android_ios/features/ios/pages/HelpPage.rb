@@ -1,9 +1,10 @@
 class HelpPage < DroidLeeo
   
+  element(:done) { "Button id:'done_button'"}
   
-  element(:done) { "button marked:'Button.back'"}
-  
-  action(:touchDone) {touch(done)}
+  def touchDone
+    touch(done)
+  end
   
   trait(:trait) { done }
   

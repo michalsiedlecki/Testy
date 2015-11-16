@@ -1,7 +1,9 @@
 class LoginPage < DroidLeeo
   element(:login) { "button marked:'Button.log-in'"}
   
-  action(:touchLogin) {touch(login)}
+  def touchLogin
+    touch(login)
+  end
   
   trait(:trait) { login }
 end

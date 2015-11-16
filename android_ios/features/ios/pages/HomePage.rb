@@ -1,19 +1,35 @@
 class HomePage < DroidLeeo
   
    element(:homeInformation) { "ResidenceSettingsCell marked: 'Cell.home-information'" }
-   element(:celsius) { "label marked:'°C'"}
-   element(:fahrenheit) { "label marked:'°F'"}
+   element(:celsius) { "RadioButton id:'Button.celsius'"}
+   element(:fahrenheit) { "RadioButton id:'Button.fahrenheit'"}
    element(:back) { "button marked:'Button.back'"}
   
-  action(:touchCelsius) {touch(celsius)}
-  action(:touchFahrenheit) {touch(fahrenheit)}
-  action(:touchHomeInformation) {touch(homeInformation)}
-  action(:touchBack) {touch(back)}
+  def touchCelsius
+     touch(celsius)
+  end
+  
+  def touchFahrenheit
+     touch(fahrenheit)
+  end
+  
+  def touchHomeInformation
+    touch(homeInformation)
+  end
+  
+  def touchBack
+     touch(back)
+  end
   
   trait(:trait) { celsius }
   
   def ChangeUnit
-    touchCelsius #if element_exists("#{:celsius} isSelected:1") 
+    
+   if query(celsius, :isSelected)[0] == 1
+     touch(fahrenheit)
+   else
+      touch(celsius) 
+   end
     touch(back)
   end
   

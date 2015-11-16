@@ -1,7 +1,9 @@
 class MainPage < DroidLeeo
   element(:menu) { "* marked:'Drawer menu'"}
   
-  action(:touchMenu) {touch(menu)}
+  def touchMenu
+    touch(menu)
+  end
   
   trait(:trait) { menu }
 end

@@ -4,8 +4,13 @@ class HomeInformationPage < DroidLeeo
    element(:street) { "TextField marked:'TextField.address-one'"}
    element(:save) { "button marked:'Button.save'"}
   
-  action(:touchSave) {touch(save)}
-  action(:touchStreet) {touch(street)}
+  def touchSave
+   touch(save)
+  end
+  
+  def touchStreet
+   touch(street)
+  end 
   
   trait(:trait) { street }
   

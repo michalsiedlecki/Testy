@@ -1,0 +1,54 @@
+{
+  "enabled": true,
+  "connection": {
+    "origin": "pubsub.pubnub.com",
+    "publishKey": "pub-c-b8f0aa53-b914-4af4-ab62-2f35d53b6aea",
+    "subscribeKey": "sub-c-d28e2f60-4c64-11e4-9e3d-02ee2ddab7fe",
+    "backend": "http://qa.leeo.com/api"
+  },
+  "info": {
+    "serialNb": "QTFMM42047000012",
+    "swVersion": "1.7-2-201510281823",
+    "deviceId": 692,
+    "channel": "c4e35932-2b3f-4ed2-9939-b60bcaf75a47",
+    "token": "70c8d014-b34c-4ab6-b79b-8e6ecd05e51b"
+  },
+  "state": {
+    "temperature": 50,
+    "humidity": 1,
+    "color": [
+      0,
+      0,
+      1
+    ],
+    "_alsEnabled": false,
+    "_alsSuspended": true,
+    "_testMode": false
+  },
+  "alarms": {
+    "co": {
+      "active": false,
+      "sound": "devices/ALARM.WAV",
+      "storageUrl": null,
+      "_id": null
+    },
+    "smoke": {
+      "active": false,
+      "sound": null,
+      "storageUrl": null,
+      "_id": null
+    },
+    "sound": {
+      "active": false,
+      "sound": null,
+      "storageUrl": null,
+      "_id": null
+    },
+    "battery": {
+      "active": false,
+      "sound": null,
+      "storageUrl": null,
+      "_id": null
+    }
+  }
+}

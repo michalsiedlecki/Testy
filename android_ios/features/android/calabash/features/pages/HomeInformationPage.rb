@@ -4,8 +4,14 @@ class HomeInformationPage < DroidLeeo
    element(:street) { "EditText id:'home_information_address_line_one'"}
    element(:save) { "Button id:'save_button'"}
   
-  action(:touchSave) {touch(save)}
-  action(:touchStreet) {touch(street)}
+  
+  def touchSave
+   touch(save)
+  end
+  
+  def touchStreet
+   touch(street)
+  end   
   
   trait(:trait) { street }
   

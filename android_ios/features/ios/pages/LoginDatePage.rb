@@ -5,7 +5,6 @@ class LoginDatePage < DroidLeeo
   element(:email) { "TextField marked:'TextField.email'"}
   element(:password) { "TextField marked:'TextField.password'"}
   
-  action(:touchLogIn) {touch(logIn)}
   
   trait(:trait) { email }
   
@@ -14,6 +13,6 @@ class LoginDatePage < DroidLeeo
     fast_enter_text(email1)
     touch(password)
     fast_enter_text(password1)
-    touchLogIn
+    touch(logIn)
   end
 end
