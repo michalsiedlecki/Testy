@@ -7,10 +7,10 @@
     "backend": "http://qa.leeo.com/api"
   },
   "info": {
-    "serialNb": "QTFMM42047000012",
+    "serialNb": "QTFMM42047000017",
     "swVersion": "1.7-2-201510281823",
     "deviceId": 692,
-    "channel": "c4e35932-2b3f-4ed2-9939-b60bcaf75a47",
+    "channel": "c4e35932-2b3f-4ed2-9939-b60bcaf75a73",
     "token": "70c8d014-b34c-4ab6-b79b-8e6ecd05e51b"
   },
   "state": {
@@ -22,13 +22,13 @@
       1
     ],
     "_alsEnabled": false,
-    "_alsSuspended": true,
-    "_testMode": false
+    "_alsSuspended": false,
+    "_testMode": true
   },
   "alarms": {
     "co": {
       "active": false,
-      "sound": "devices/ALARM.WAV",
+      "sound": null,
       "storageUrl": null,
       "_id": null
     },
@@ -36,7 +36,7 @@
       "active": false,
       "sound": null,
       "storageUrl": null,
-      "_id": null
+      "_id": 1500
     },
     "sound": {
       "active": false,

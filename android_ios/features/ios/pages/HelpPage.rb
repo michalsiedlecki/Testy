@@ -1,6 +1,6 @@
 class HelpPage < DroidLeeo
   
-  element(:done) { "Button id:'done_button'"}
+  element(:done) { "button id:'Button.back'"}
   
   def touchDone
     touch(done)

@@ -8,7 +8,7 @@ end
 Given(/I check temperature$/) do
   
   @devicePageObj= page(DevicePage).await
-  @devicePageObj.checkTemperature(DATA[:temperature])
+  @devicePageObj.checkTemperature(DATA[:temperatureCelsius], DATA[:temperatureFarenheit])
   
 end
 

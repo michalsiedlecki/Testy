@@ -24,8 +24,12 @@ class HomePage < DroidLeeo
   trait(:trait) { celsius }
   
   def ChangeUnit
-    touchCelsius #if element_exists("#{:celsius} isSelected:1") 
-    touch(back) 
+   if query(celsius, :isSelected)[0] == 1
+     touch(fahrenheit)
+   else
+      touch(celsius) 
+   end
+    touch(back)
   end
   
     

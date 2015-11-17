@@ -17,22 +17,23 @@ class DevicePage < DroidLeeo
   
   trait(:trait) { menu }
   
-  def checkTemperature(temp)
-    sleep(2)
+  def checkTemperature(tempC, tempF)
+    wait_for_element_does_not_exist("Label marked:'Label.temperature-value' text:'--'")
     t = query(temperature)[0]["text"]
-    print temp, " = ", t
-    raise "Temperatures are not equal" unless temp == t
+    if tempC != t && tempF != t
+      raise "Temperatures are not equal"
+    end
   end
    
   def checkHumidity(humi)
-    sleep(2)
+    wait_for_element_does_not_exist("Label marked:'Label.humidity-value' text:'--'")
     h = query(humidity)[0]["text"]
     print humi, " = ", h
     raise "Humiditys are not equal" unless humi == h
   end
    
   def checkAlert(message)
-    sleep(2)
+    wait_for_element_exists("* marked:'High Temperature' text:'#{message}'")
     m = query(alert)[0]["text"]
     print message, " = ", m
     raise "Message are not equal" unless message == m   
